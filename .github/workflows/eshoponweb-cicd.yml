@@ -1,4 +1,4 @@
-Name: eShopOnWeb Build and Test
+name: eShopOnWeb Build and Test
 # Trigger the workflow on push to main branch or manual trigger
 on:
   push:
