@@ -1,4 +1,4 @@
-name: eShopOnWeb Build and Test
+RESOURCE-GROUP: eShopOnWeb Build and Test
 # Trigger the workflow on push to main branch or manual trigger
 on:
   push:
@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
 # Environment variables used across jobs
 env:
-  RESOURCE-GROUP: 'rg-eshoponweb-NAME' # Replace NAME with your unique identifier
+  RESOURCE-GROUP: 'rg-eshoponweb-123456' # Replace NAME with your unique identifier
   LOCATION: 'centralus' # Choose your Azure region
   TEMPLATE-FILE: '${{ github.workspace }}/infra/webapp.bicep'
-  SUBSCRIPTION-ID: 'YOUR-SUBS-ID' # Replace with your subscription ID
+  SUBSCRIPTION-ID: 'f76a2729-7cdc-426b-be1b-e8f21371729c' # Replace with your subscription ID
   WEBAPP-NAME: 'eshoponweb-NAME' # Replace NAME with unique identifier (lowercase, no spaces)
 jobs:
   # Build and test job
