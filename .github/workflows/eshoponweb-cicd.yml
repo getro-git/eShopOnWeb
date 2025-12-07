@@ -76,7 +76,7 @@ jobs:
           resourceGroupName: ${{ env.RESOURCE-GROUP }}
           template: infra/webapp.bicep
           parameters: webAppName=${{ env.WEBAPP-NAME }} location=${{ env.LOCATION }}
-          failOnStdErr: false
+          failOnStdErr: true
       # ✅ Deploy app to Azure Web App
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
